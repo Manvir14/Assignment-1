@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Grade Calculator</title>
+  <link rel="stylesheet" href="calculator.css" type="text/css">
+  <script type="text/javascript" src = "calculator.js"></script>
+
+</head>
+
+<body>
+    <div class="main_box">
+      <div class="header"></div>
+      <h1 id="Title">Grade Calculator</h1>
+      <div id="inner_box">
+        <h2>Activities</h2>
+        <p>Give grades to the numeric activities</p>
+        <table class="table">
+          <tr>
+            <th>Name</th>
+            <th>Short Name</th>
+            <th>Weight</th>
+            <th>Grade</th>
+            <th>Percent</th>
+          </tr>
+          <tr>
+            <td> <p class = "name" onclick="changeName()">Activity 1</p></td>
+            <td><p class="short_name" onclick="changeName()"> A1 </p> </td>
+            <td><input type="text" class="weighted"> </td>
+            <td><input type="text" class="numerator" oninput="percent()">/<br>
+                <input type="text" class="denominator" oninput="percent()"></td>
+            <td class="result"></td>
+          </tr>
+          <tr>
+            <td> <p class="name" onclick="changeName()">Activity 2</p></td>
+            <td> <p class="short_name" onclick="changeName()"> A2 </p> </td>
+            <td><input type="text" class="weighted"> </td>
+            <td><input type="text" class="numerator" oninput="percent()">/<br>
+                <input type="text" class="denominator" oninput="percent()"></td>
+            <td class="result"></td>
+          </tr>
+          <tr>
+            <td><p class="name" onclick="changeName()">Activity 3</p></td>
+            <td> <p class="short_name" onclick="changeName()"> A3 </p> </td>
+            <td><input type="text" class="weighted"> </td>
+            <td><input type="text" class="numerator" oninput="percent()">/<br>
+                <input type="text" class="denominator" oninput="percent()"></td>
+            <td class="result"></td>
+          </tr>
+          <tr>
+            <td> <p class="name" onclick="changeName()">Activity 4</p></td>
+            <td> <p class="short_name" onclick="changeName()"> A4 </p> </td>
+            <td><input type="text" class="weighted"> </td>
+            <td><input type="text" class="numerator" oninput="percent()">/<br>
+                <input type="text" class="denominator" oninput="percent()"></td>
+            <td class="result"></td>
+          </tr>
+        </table>
+        <button type="button" class = "button" id ="add" onclick="addActivity()">Add activity</button>
+        <div class="results">
+          <h2>Result </h2>
+          <h2 id ="final_result"></h2>
+          <input class ="button" id="mean" type="submit" value="MEAN" onclick="mean()">
+          <input class ="button" id="weight" type="submit" value="WEIGHTED" onclick="weighted()">
+
+        </div>
+
+
+      </div>
+    </div>
+    <div class="footer"> </div>
+
+
+
+
+</body>
+
+
+</html>
